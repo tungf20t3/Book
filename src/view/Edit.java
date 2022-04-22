@@ -187,7 +187,7 @@ public class Edit extends javax.swing.JFrame {
         int id = Integer.parseInt(idCBB.getSelectedItem().toString());
         book.setId(id);
         book.setTitle(txtTitle.getText());
-        book.setPrice((double) SPprice.getValue());
+        book.setPrice((double) Integer.parseInt(SPprice.getValue().toString()));
         
         try {
             if(swingService.updateBook(book) == 1) {

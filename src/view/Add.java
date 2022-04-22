@@ -35,7 +35,7 @@ public class Add extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        btnSave = new javax.swing.JButton();
+        btnSave1 = new javax.swing.JButton();
         txtPrice = new javax.swing.JTextField();
         txtTitle = new javax.swing.JTextField();
         btnReset = new javax.swing.JButton();
@@ -51,12 +51,12 @@ public class Add extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         jLabel2.setText("Price:");
 
-        btnSave.setBackground(new java.awt.Color(204, 255, 204));
-        btnSave.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
-        btnSave.setText("Save");
-        btnSave.addActionListener(new java.awt.event.ActionListener() {
+        btnSave1.setBackground(new java.awt.Color(204, 255, 204));
+        btnSave1.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        btnSave1.setText("Save");
+        btnSave1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSaveActionPerformed(evt);
+                btnSave1ActionPerformed(evt);
             }
         });
 
@@ -91,7 +91,7 @@ public class Add extends javax.swing.JFrame {
                 .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnSave)
+                        .addComponent(btnSave1)
                         .addGap(27, 27, 27)
                         .addComponent(btnReset)
                         .addGap(71, 71, 71)
@@ -123,7 +123,7 @@ public class Add extends javax.swing.JFrame {
                     .addComponent(txtPrice, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSave1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32))
@@ -143,7 +143,7 @@ public class Add extends javax.swing.JFrame {
         txtPrice.setText("");
     }//GEN-LAST:event_btnResetActionPerformed
 
-    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+    private void btnSave1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSave1ActionPerformed
         Books book = new Books();
         book.setTitle(txtTitle.getText());
         book.setPrice(Double.valueOf(txtPrice.getText()));
@@ -159,7 +159,7 @@ public class Add extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(Add.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_btnSaveActionPerformed
+    }//GEN-LAST:event_btnSave1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -199,7 +199,7 @@ public class Add extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnReset;
-    private javax.swing.JButton btnSave;
+    private javax.swing.JButton btnSave1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField txtPrice;

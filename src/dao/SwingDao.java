@@ -133,7 +133,7 @@ public class SwingDao {
     public int updateBook(Books book) throws SQLException {
         Connection connection = JDBCConnection.getJDBCConnection();
         
-        String sql = "UPDATE book_inf SET title = ?, price = ?  WHERE id = ?";                               
+        String sql = "UPDATE books SET title = ?, price = ?  WHERE id = ?";                               
         
         PreparedStatement preparedStatement = connection.prepareStatement(sql);        
         preparedStatement.setString(1, book.getTitle());
